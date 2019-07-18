@@ -179,7 +179,7 @@
     <junit.version>4.11</junit.version>
     <kryo.version>3.0.3</kryo.version>
     <libfb303.version>0.9.3</libfb303.version>
-    <libthrift.version>0.9.3</libthrift.version>
+    <libthrift.version>0.12.0</libthrift.version>
     <log4j2.version>2.10.0</log4j2.version>
     <opencsv.version>2.3</opencsv.version>
     <orc.version>1.4.3</orc.version>
@@ -206,7 +206,7 @@
     <wadl-resourcedoc-doclet.version>1.4</wadl-resourcedoc-doclet.version>
     <velocity.version>1.5</velocity.version>
     <xerces.version>2.9.1</xerces.version>
-    <zookeeper.version>3.4.6</zookeeper.version>
+    <zookeeper.version>3.4.14</zookeeper.version>
     <jpam.version>1.1</jpam.version>
     <felix.version>2.4.0</felix.version>
     <curator.version>2.12.0</curator.version>
