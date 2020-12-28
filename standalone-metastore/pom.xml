@@ -20,7 +20,7 @@
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
     <version>18</version>
-    <relativePath></relativePath>
+    <relativePath/>
   </parent>
 
   <groupId>org.apache.hive</groupId>
@@ -69,11 +69,11 @@
     <datanucleus-rdbms.version>4.1.19</datanucleus-rdbms.version>
     <derby.version>10.10.2.0</derby.version>
     <dropwizard-metrics-hadoop-metrics2-reporter.version>0.1.2</dropwizard-metrics-hadoop-metrics2-reporter.version>
-    <dropwizard.version>3.1.0</dropwizard.version>
+    <dropwizard.version>4.0.0</dropwizard.version>
     <guava.version>19.0</guava.version>
-    <hadoop.version>3.0.0-beta1</hadoop.version>
+    <hadoop.version>3.3.0</hadoop.version>
     <hikaricp.version>2.6.1</hikaricp.version>
-    <jackson.new.version>2.6.5</jackson.new.version>
+    <jackson.new.version>2.10.0</jackson.new.version>
     <javolution.version>5.5.1</javolution.version>
     <junit.version>4.11</junit.version>
     <libfb303.version>0.9.3</libfb303.version>
@@ -340,20 +340,19 @@
                 <phase>generate-sources</phase>
                 <configuration>
                   <target>
-                    <taskdef name="for" classname="net.sf.antcontrib.logic.ForTask"
-                             classpathref="maven.plugin.classpath" />
+                    <taskdef name="for" classname="net.sf.antcontrib.logic.ForTask" classpathref="maven.plugin.classpath"/>
                     <property name="thrift.args" value="${thrift.args}"/>
                     <property name="thrift.gen.dir" value="${thrift.gen.dir}"/>
                     <delete dir="${thrift.gen.dir}"/>
                     <mkdir dir="${thrift.gen.dir}"/>
                     <for param="thrift.file">
                       <path>
-                        <fileset dir="." includes="src/main/thrift/*.thrift" />
+                        <fileset dir="." includes="src/main/thrift/*.thrift"/>
                       </path>
                       <sequential>
                         <echo message="Generating Thrift code for @{thrift.file}"/>
-                        <exec executable="${thrift.home}/bin/thrift"  failonerror="true" dir=".">
-                          <arg line="${thrift.args} -I ${basedir}/include -I ${basedir}/.. -o ${thrift.gen.dir} @{thrift.file} " />
+                        <exec executable="${thrift.home}/bin/thrift" failonerror="true" dir=".">
+                          <arg line="${thrift.args} -I ${basedir}/include -I ${basedir}/.. -o ${thrift.gen.dir} @{thrift.file} "/>
                         </exec>
                       </sequential>
                     </for>
@@ -522,10 +521,10 @@
             </goals>
             <configuration>
               <target>
-                <delete dir="${test.tmp.dir}" />
-                <delete dir="${test.warehouse.dir}" />
-                <mkdir dir="${test.tmp.dir}" />
-                <mkdir dir="${test.warehouse.dir}" />
+                <delete dir="${test.tmp.dir}"/>
+                <delete dir="${test.warehouse.dir}"/>
+                <mkdir dir="${test.tmp.dir}"/>
+                <mkdir dir="${test.warehouse.dir}"/>
               </target>
             </configuration>
           </execution>
@@ -554,7 +553,7 @@
             </goals>
             <configuration>
               <target>
-                <mkdir dir="${test.tmp.dir}/scripts/metastore/upgrade" />
+                <mkdir dir="${test.tmp.dir}/scripts/metastore/upgrade"/>
                 <copy todir="${test.tmp.dir}/scripts/metastore/upgrade">
                   <fileset dir="${basedir}/src/main/sql/"/>
                 </copy>
