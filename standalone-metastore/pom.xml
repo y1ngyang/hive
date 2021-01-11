@@ -73,7 +73,7 @@
     <guava.version>19.0</guava.version>
     <hadoop.version>3.0.0-beta1</hadoop.version>
     <hikaricp.version>2.6.1</hikaricp.version>
-    <jackson.new.version>2.6.5</jackson.new.version>
+    <jackson.new.version>2.12.1</jackson.new.version>
     <javolution.version>5.5.1</javolution.version>
     <junit.version>4.11</junit.version>
     <libfb303.version>0.9.3</libfb303.version>
