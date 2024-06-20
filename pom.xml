@@ -157,7 +157,7 @@
     <ivy.version>2.4.0</ivy.version>
     <jackson.version>1.9.13</jackson.version>
     <!-- jackson 1 and 2 lines can coexist without issue, as they have different artifactIds -->
-    <jackson.new.version>2.9.7</jackson.new.version>
+    <jackson.new.version>2.9.9.2</jackson.new.version>
     <jasper.version>5.5.23</jasper.version>
     <jamon.plugin.version>2.3.4</jamon.plugin.version>
     <jamon-runtime.version>2.3.1</jamon-runtime.version>
@@ -195,7 +195,7 @@
     <slf4j.version>1.7.10</slf4j.version>
     <ST4.version>4.0.4</ST4.version>
     <storage-api.version>2.6.0-SNAPSHOT</storage-api.version>
-    <tez.version>0.9.1</tez.version>
+    <tez.version>0.10.2</tez.version>
     <slider.version>0.92.0-incubating</slider.version>
     <super-csv.version>2.2.0</super-csv.version>
     <spark.version>2.3.0</spark.version>
