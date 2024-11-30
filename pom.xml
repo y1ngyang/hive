@@ -157,7 +157,7 @@
     <ivy.version>2.4.0</ivy.version>
     <jackson.version>1.9.13</jackson.version>
     <!-- jackson 1 and 2 lines can coexist without issue, as they have different artifactIds -->
-    <jackson.new.version>2.9.7</jackson.new.version>
+    <jackson.new.version>2.9.10.8</jackson.new.version>
     <jasper.version>5.5.23</jasper.version>
     <jamon.plugin.version>2.3.4</jamon.plugin.version>
     <jamon-runtime.version>2.3.1</jamon-runtime.version>
@@ -180,7 +180,7 @@
     <kryo.version>3.0.3</kryo.version>
     <libfb303.version>0.9.3</libfb303.version>
     <libthrift.version>0.9.3</libthrift.version>
-    <log4j2.version>2.10.0</log4j2.version>
+    <log4j2.version>2.13.2</log4j2.version>
     <opencsv.version>2.3</opencsv.version>
     <orc.version>1.4.3</orc.version>
     <mockito-all.version>1.10.19</mockito-all.version>
