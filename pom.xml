@@ -1463,7 +1463,7 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>findbugs-maven-plugin</artifactId>
-            <version>3.0.0</version>
+            <version>3.0.5</version>
             <configuration>
               <fork>true</fork>
               <maxHeap>2048</maxHeap>
@@ -1478,7 +1478,7 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>findbugs-maven-plugin</artifactId>
-            <version>3.0.0</version>
+            <version>3.0.5</version>
             <configuration>
               <fork>true</fork>
               <maxHeap>2048</maxHeap>
